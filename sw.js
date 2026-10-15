@@ -1,5 +1,5 @@
-const CACHE = 'vuja-vault-v3-icons';
-const ASSETS = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png', './icon.svg', './favicon.ico', './favicon-16.png', './favicon-32.png', './favicon-48.png'];
+const CACHE = 'vuja-vault-v4-studio';
+const ASSETS = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-512.png', './apple-touch-icon.png', './icon.svg', './favicon.ico', './favicon-16.png', './favicon-32.png', './favicon-48.png', './studio.css', './fonts/space-grotesk-variable.ttf'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)));
   self.skipWaiting();
